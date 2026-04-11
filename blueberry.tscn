@@ -1,3 +1,28 @@
 [gd_scene format=3 uid="uid://dle5o7u6p804k"]
 
+[ext_resource type="Texture2D" uid="uid://cuq18pnbty7n8" path="res://art/First Texture.png" id="1_0l8em"]
+
 [node name="Node" type="Node" unique_id=1239573509]
+
+[node name="Background" type="CanvasLayer" parent="." unique_id=796221531]
+
+[node name="TextureRect" type="TextureRect" parent="Background" unique_id=1831704966]
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("1_0l8em")
+
+[node name="Midground" type="CanvasLayer" parent="." unique_id=2045739087]
+layer = 10
+
+[node name="CodeEdit" type="CodeEdit" parent="Midground" unique_id=443338531]
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="Code_Decorators" type="CanvasLayer" parent="." unique_id=590677890]
+
+[node name="Frontground" type="CanvasLayer" parent="." unique_id=1664058874]
+layer = 100
+
+[node name="MenuBar" type="MenuBar" parent="Frontground" unique_id=1496452161]
+offset_right = 1920.0
+offset_bottom = 40.0

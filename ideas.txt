@@ -1,0 +1,53 @@
+If auto complete option size == 1 and the type expr == suggested expr, just drop the intellisense, although idk its probably written by the compiler so like idk would have to hand roll it which isnt that bad the STL CSTDL and project specific keywords are doable esp because there probably listed in a single document somewhere anyways, would just be a JSON store and a load and  hash resole owo
+
+
+
+Buildable UI, where binding actions and stuff is pre easy, just write a C# script and it’ll work so  needa give access to buffers, special types the editor knows about and give utilities to query compiler runic scripts thru C# in a way thats easy and manageable also readable, so like
+
+A css style thing like:
+
+<button = samdfalskdmfa > … 
+
+C# script queries BUTTON_NAME[name] and ties a Action to it owo
+
+
+Highlight colour options owo
+
+Themes are determined by a simple to edit JSON, where it pattern matches whatever is there w a colour hex code owo
+
+Probably give more specific options for style like var styles like highlight PascalCase stuff because we only use them as types, anything snake_case is this colour
+
+Private vars are this colour, public is this owo
+
+Comment blocks and stuff, macros for generating text cuz y not owo
+
+profile.blu – profile file
+format.blu – code formatter w overrides per lang
+lang.blu
+project.blu
+
+Gonna need a parser that can get that info either from the compiler or we can just hand roll one per lang it’s not that hard owo notlike we needa construct an AST, just enough information to know the name, and a bit about its context like scope declaration and type
+
+– rainbow i (oooo gdocs auto em dash owo) but ye rainbow indent and brackets by default, 
+
+– do the em dash thing in comments only like google but also maybe not idk owo, 
+
+– texture backgrounds as default option + 3D backgrounds owo, add cycling for new tabs if wanted, camera viewport option for scissoring part of the scene idk owo
+
+– cool code preview scroll w red blocks for error regions like vs and vs code uwu
+
+– ctrl + zoom
+
+– find regular expression and replace across entire file except not shitty like vs and multi line
+
+– spaces instead of tabs by default, auto convert all files in project between CRLF <-> LF if needed or convert all files from tabs -> spaces automatically
+
+
+– Per script window undo caching, eg. u edit two scripts async and like u go back and wanna undo the last action on that window, so per window actions ig owo vampire gur
+
+– DEFAULT INLINE ERRORS OWO
+
+– DO I EVEN NEED A PROJECT FILE REALLY just assume everything in the workspace is a source file ig, or not actually yeah probably need project files owo
+
+
+Rescan workspace, clean build ig idk owo
