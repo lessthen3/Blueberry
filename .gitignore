@@ -17,3 +17,5 @@ mono_crash.*.json
 
 **.sln
 **.csproj
+
+export_presets.cfg

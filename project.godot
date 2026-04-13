@@ -18,8 +18,7 @@ config/features=PackedStringArray("4.6", "C#", "Forward Plus")
 
 window/size/viewport_width=1920
 window/size/viewport_height=1080
-window/size/mode=2
-window/size/initial_position_type=4
+window/size/mode=3
 window/size/borderless=true
 
 [dotnet]
@@ -43,3 +42,5 @@ folder_colors={
 [rendering]
 
 rendering_device/driver.windows="d3d12"
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"

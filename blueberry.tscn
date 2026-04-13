@@ -1,12 +1,18 @@
 [gd_scene format=3 uid="uid://dle5o7u6p804k"]
 
 [ext_resource type="Texture2D" uid="uid://cuq18pnbty7n8" path="res://art/First Texture.png" id="1_0l8em"]
+[ext_resource type="Script" uid="uid://jurepw6adyau" path="res://scripts/EditorMain.cs" id="1_bw5qf"]
+[ext_resource type="Script" uid="uid://v3omhxhcbq4p" path="res://scripts/Console.cs" id="3_5a6b4"]
 
 [node name="Node" type="Node" unique_id=1239573509]
+script = ExtResource("1_bw5qf")
 
 [node name="Background" type="CanvasLayer" parent="." unique_id=796221531]
 
-[node name="TextureRect" type="TextureRect" parent="Background" unique_id=1831704966]
+[node name="SubViewport" type="SubViewport" parent="Background" unique_id=1233997268]
+size = Vector2i(1920, 1080)
+
+[node name="TextureRect" type="TextureRect" parent="Background/SubViewport" unique_id=1831704966]
 offset_right = 1920.0
 offset_bottom = 1080.0
 texture = ExtResource("1_0l8em")
@@ -24,5 +30,29 @@ offset_bottom = 1080.0
 layer = 100
 
 [node name="MenuBar" type="MenuBar" parent="Frontground" unique_id=1496452161]
+layout_direction = 3
 offset_right = 1920.0
 offset_bottom = 40.0
+
+[node name="Close_B" type="TextureButton" parent="Frontground/MenuBar" unique_id=1389279360]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="MaxMin_B" type="TextureButton" parent="Frontground/MenuBar" unique_id=1316615919]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 4.0
+offset_right = 80.0
+offset_bottom = 44.0
+
+[node name="Minimize_B" type="TextureButton" parent="Frontground/MenuBar" unique_id=448810886]
+layout_mode = 0
+offset_left = 80.0
+offset_right = 120.0
+offset_bottom = 40.0
+
+[node name="Always_In_Front" type="CanvasLayer" parent="." unique_id=1783052353]
+
+[node name="Console" type="Node2D" parent="Always_In_Front" unique_id=1114389491]
+script = ExtResource("3_5a6b4")
