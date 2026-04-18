@@ -21,6 +21,8 @@ texture = ExtResource("1_0l8em")
 layer = 10
 
 [node name="CodeEdit" type="CodeEdit" parent="Midground" unique_id=443338531]
+offset_left = 571.0
+offset_top = 240.0
 offset_right = 1920.0
 offset_bottom = 1080.0
 
@@ -29,27 +31,19 @@ offset_bottom = 1080.0
 [node name="Frontground" type="CanvasLayer" parent="." unique_id=1664058874]
 layer = 100
 
-[node name="MenuBar" type="MenuBar" parent="Frontground" unique_id=1496452161]
-layout_direction = 3
+[node name="Minimize_B" type="TextureButton" parent="Frontground" unique_id=448810886]
+offset_left = 1800.0
+offset_right = 1840.0
+offset_bottom = 40.0
+
+[node name="ToggleWindowMode_B" type="TextureButton" parent="Frontground" unique_id=1316615919]
+offset_left = 1840.0
+offset_right = 1880.0
+offset_bottom = 40.0
+
+[node name="Close_B" type="TextureButton" parent="Frontground" unique_id=1389279360]
+offset_left = 1880.0
 offset_right = 1920.0
-offset_bottom = 40.0
-
-[node name="Close_B" type="TextureButton" parent="Frontground/MenuBar" unique_id=1389279360]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="MaxMin_B" type="TextureButton" parent="Frontground/MenuBar" unique_id=1316615919]
-layout_mode = 0
-offset_left = 40.0
-offset_top = 4.0
-offset_right = 80.0
-offset_bottom = 44.0
-
-[node name="Minimize_B" type="TextureButton" parent="Frontground/MenuBar" unique_id=448810886]
-layout_mode = 0
-offset_left = 80.0
-offset_right = 120.0
 offset_bottom = 40.0
 
 [node name="Always_In_Front" type="CanvasLayer" parent="." unique_id=1783052353]
