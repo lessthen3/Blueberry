@@ -3,6 +3,10 @@
 .cache
 .vscode
 
-
 #MacOS specific
 **.DS_Store
+
+
+# build info
+build_errors.md
+build_warnings.md
