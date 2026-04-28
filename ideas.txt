@@ -51,3 +51,31 @@ Gonna need a parser that can get that info either from the compiler or we can ju
 
 
 Rescan workspace, clean build ig idk owo
+
+
+
+middle click slice over hovered region to group select from text buffer instead of left click wrap line text buffer semantic, so group indenting w offset from first char on line
+is easier, like
+
+#define blah
+#define bleh
+
+can be selected and tab indented for
+
+# define blah
+# define bleh
+
+cause the hashtag would get caught on a left cick group hover select so ye owo
+
+
+obviously have an optional UI element for the code scrollbar cause thats cool owo
+
+be able to customize to look like terminal emacs/neovim vibes, but w real textures, models
+
+and can be molded to look like vs owo
+
+
+
+---- can easily implement a png, and svg viewer using the hardware accelerated apis owo
+
+jpeg, bmap, ppm, n stuff would be annoying,
