@@ -103,12 +103,22 @@ target_include_directories(blueberry SYSTEM PRIVATE
     ${PROJECT_SOURCE_DIR}/third_party/source_include/
 )
 
-# Suppress all warnings ;w; for third_party source files in GCC/Clang
-set_source_files_properties(
-    ${PHYSFS_SOURCES}
-    ${LUA_SOURCES}
-    PROPERTIES COMPILE_FLAGS "-w"
-)
+# disable third party warnings OwO, idk just trusting em
+if(MSVC)
+    # MSVC uses /W0 to disable all warnings
+    set_source_files_properties(
+        ${PHYSFS_SOURCES}
+        ${LUA_SOURCES}
+        PROPERTIES COMPILE_FLAGS "/W0"
+    )
+else()
+    # GCC and Clang use -w
+    set_source_files_properties(
+        ${PHYSFS_SOURCES}
+        ${LUA_SOURCES}
+        PROPERTIES COMPILE_FLAGS "-w"
+    )
+endif()
 
 source_group("third_party/physfs" FILES ${PHYSFS_SOURCES})
 source_group("third_party/lua" FILES ${LUA_SOURCES})

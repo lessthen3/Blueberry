@@ -79,3 +79,10 @@ and can be molded to look like vs owo
 ---- can easily implement a png, and svg viewer using the hardware accelerated apis owo
 
 jpeg, bmap, ppm, n stuff would be annoying,
+
+
+IMPORTANT AF:
+
+make sure atomic writes and temp buffers are safe af dont corrupt data at any cost this is absolutely a priority
+
+also when closing files IN ANY OPERATION, ALWAYS ask about if they wanna save it before closing, or force quit, or cancel the close operation owo
